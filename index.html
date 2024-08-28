@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+    
+            background-color: aliceblue;
+            
+            grid-gap:10px;
+            grid-template-areas: 
+            "a a a"
+            "b c c"
+            "b d d";
+            padding: 5px;
+            width:600px;
+           
+            position: relative;
+            left:25%
+          
+        }
+        .gr{
+            border: 1px solid white;
+            width: 100%;
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+            
+        }
+        .container>:nth-child(1){
+            grid-area: a;
+            background-color: aqua;
+        
+        
+        }
+        .container>:nth-child(2){
+            grid-area: b;
+            height:100%;
+            background-color: burlywood;
+        
+        }
+        .container>:nth-child(3){
+            grid-area: c;
+            background-color: chocolate;
+        
+        }
+        .container>:nth-child(4){
+            grid-area: d;
+            background-color: darkblue;
+        
+        }
+        
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+       <div class="a gr">a</div>
+       <div class="b gr">b</div>
+       <div class="c gr">c</div>
+       <div class="d gr">d</div>
+      
+       
+    </div>
+    
+</body>
+</html>
